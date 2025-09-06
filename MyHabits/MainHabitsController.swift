@@ -7,19 +7,25 @@
 
 import UIKit
 
+// MARK: - Main Habits Controller -
 class MainHabitsController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .systemBackground
     }
     
     @IBAction private func addTapped(_ sender: UIBarButtonItem) {
+        showAddHabitAlert()
+    }
+    
+    private func showAddHabitAlert() {
         let alertController = UIAlertController(
             title: "Пока пусто",
             message: "Кнопка + еще не настроена",
             preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "ОК", style: .default))
-        
         present(alertController, animated: true)
     }
 }
