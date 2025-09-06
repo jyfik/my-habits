@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - Main Habits Controller -
 class MainHabitsController: UIViewController {
 
     override func viewDidLoad() {
